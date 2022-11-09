@@ -1,2 +1,4 @@
-datas
-data
+.DS_Store
+data/4096/*
+data/1024/*
+data/sprites/*
