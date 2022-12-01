@@ -1,6 +1,6 @@
-# Van Gogh
+# Van Gogh test2
 
-The [Van Gogh Museum](http://vangoghmuseum.nl/en/) in Amsterdam owns the world's largest collection of artworks by Vincent van Gogh. Among the collection are world famous paintings like "Sunflowers", "Almond Blossom" and "The Potato Eaters". Vincent lived and worked in 14 different cities in the Netherlands, Belgium and France, where among the many famous paintings and self-portraits he also created drawings of the people, animals and landscapes of the region to improve his artistic skills.
+The [Van Gogh Museum](http://vangoghmuseum.nl/en/) in " and "The Potato Eaters". Vincent lived and worked in 14 different cities in the Netherlands, Belgium and France, where among the many famous paintings and self-portraits he also created drawings of the people, animals and landscapes of the region to improve his artistic skills.
 
 ![tags](img/infobar_tags.svg)
 
