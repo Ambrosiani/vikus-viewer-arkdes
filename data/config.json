@@ -78,6 +78,12 @@
         "source": "_id",
         "display": "column",
         "type": "text"
+      },
+      {
+        "name": "More info",
+        "source": "_url",
+        "display": "column",
+        "type": "link"
       }
     ]
   }

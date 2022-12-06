@@ -1,6 +1,6 @@
-# Van Gogh test2
+# Sigurd Lewerentz
 
-The [Van Gogh Museum](http://vangoghmuseum.nl/en/) in " and "The Potato Eaters". Vincent lived and worked in 14 different cities in the Netherlands, Belgium and France, where among the many famous paintings and self-portraits he also created drawings of the people, animals and landscapes of the region to improve his artistic skills.
+Sigurd Lewerentz is one of the most celebrated and legendary architects in the history of architecture. He is one of the foremost architects in modern times and one of the most significant artists in Sweden ever. As the creator of iconic works such as the landscape and the Resurrection Chapel at Skogskyrkogården in Stockholm, St. Mark's Church in Björkhagen and St. Petri's Church in Klippan, he is forever inscribed in the history of modernist architecture.
 
 ![tags](img/infobar_tags.svg)
 
