@@ -26,6 +26,9 @@ var detailVue = new Vue({
           if(entry.type === 'markdown') {
             return marked(this.item[entry.source], { breaks: true})
           }
+          if(entry.type === 'html') {
+            return this.item[entry.source]
+          }
           if(entry.type === 'function') {
             const column = this.item
             const func = entry.source
