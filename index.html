@@ -123,7 +123,7 @@ cpietsch@gmail.com
                 class="entry"
                 v-if="hasData(entry)"
               >
-                <div class="label">{{ entry.name }}</div>
+                <div v-if="entry.name" class="label">{{ entry.name }}</div>
                 <div class="content">
                   <span v-if="entry.type === 'keywords'">
                     <span
