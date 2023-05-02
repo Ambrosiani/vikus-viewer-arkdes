@@ -13,6 +13,7 @@ function Tags() {
   var keywords = [];
   var wordBackground;
   var keywordsNestGlobal;
+  var sortKeywords = true;
 
   // var filterWords = ["Potsdam"];
   var filterWords = [];
@@ -41,7 +42,11 @@ function Tags() {
       .style("color", config.style.fontColor)
       .append("div")
       //.attr("transform", "translate("+ margin.left +","+ margin.top +")")
-      
+
+    if (config.sortKeywords != undefined) {
+      sortKeywords = config.sortKeywords;
+    }
+
     tags.update();
   }
 
@@ -103,10 +108,13 @@ function Tags() {
   // c("num",sliceNum)
 
    var keywordsNest = keywordsNestGlobal
-      .slice(0,sliceNum)
-      .sort(function(a,b){
+      .slice(0,sliceNum);
+
+    if (sortKeywords) {
+      keywordsNest = keywordsNest.sort(function(a,b){
         return d3.ascending(a.key[0], b.key[0]);
       })
+    }
 
     // c("keywordsNest", keywordsNest);
 
