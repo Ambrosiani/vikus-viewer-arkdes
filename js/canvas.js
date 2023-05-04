@@ -506,7 +506,7 @@ function Canvas() {
     d3.select(".tagcloud").classed("hide", true);
     var padding = x.rangeBand() / columns / 2;
     var sidbar = width / 8;
-    var scale = 0.8 / (x.rangeBand() / columns / width);
+    var scale = 0.6 / (x.rangeBand() / columns / width);
     var translateNow = [
       -scale * (d.x - padding / 2) - sidbar,
       -scale * (height + d.y),
