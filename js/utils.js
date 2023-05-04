@@ -32,23 +32,16 @@ utils.initConfig = function(config){
 	// set window title
 	document.title = config.project.name
 
-	// puh thats kind of nasty, lets call it oldschool...
-	var length = document.styleSheets[0].cssRules.length
-	document.styleSheets[0].insertRule('.close::before { background-color: ' + config.style.fontColorActive + '}', length);
-	document.styleSheets[0].insertRule('.close::after { background-color: ' + config.style.fontColorActive + '}', length);
-	document.styleSheets[0].insertRule('.tag.active { color: ' + config.style.fontColorActive + '}', length);
-	document.styleSheets[0].insertRule('.tag.active { background: ' + config.style.fontBackground + '}', length);
-	document.styleSheets[0].insertRule('.timeline .entry { background: ' + config.style.timelineBackground + '}', length);
-	document.styleSheets[0].insertRule('.timeline .entry { color: ' + config.style.timelineFontColor + '}', length);
-	document.styleSheets[0].insertRule('.timeline .year { color: ' + config.style.fontColor + '}', length);
-	document.styleSheets[0].insertRule('.tagcloud .tag { text-shadow: ' + config.style.textShadow + '}', length);
-	document.styleSheets[0].insertRule('.infobar .outer { background: ' + config.style.infoBackground + '}', length);
-	document.styleSheets[0].insertRule('.infobar .outer { color: ' + config.style.infoFontColor + '}', length);
-	document.styleSheets[0].insertRule('.infobar a { color: ' + config.style.infoFontColor + '}', length);
-	document.styleSheets[0].insertRule('.infobar .infobutton path { stroke: ' + config.style.infoFontColor + '}', length);
-	document.styleSheets[0].insertRule('.infobar.sneak .infobutton path { stroke: ' + config.style.fontColor + '}', length);
-	document.styleSheets[0].insertRule('.sidebar .outer { background: ' + config.style.detailBackground + '}', length);
-	document.styleSheets[0].insertRule('.searchbar input { background: ' + config.style.searchbarBackground + '}', length);
+	document.documentElement.style.setProperty('--font-color-active', config.style.fontColorActive);
+	document.documentElement.style.setProperty('--font-background', config.style.fontBackground);
+	document.documentElement.style.setProperty('--timeline-background', config.style.timelineBackground);
+	document.documentElement.style.setProperty('--timeline-font-color', config.style.timelineFontColor);
+	document.documentElement.style.setProperty('--font-color', config.style.fontColor);
+	document.documentElement.style.setProperty('--text-shadow', config.style.textShadow);
+	document.documentElement.style.setProperty('--info-background', config.style.infoBackground);
+	document.documentElement.style.setProperty('--info-font-color', config.style.infoFontColor);
+	document.documentElement.style.setProperty('--detail-background', config.style.detailBackground);
+	document.documentElement.style.setProperty('--searchbar-background', config.style.searchbarBackground);
 }
 
 // exhibition installations, will reinitialize the vis after x seconds
