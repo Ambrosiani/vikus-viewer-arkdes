@@ -47,7 +47,35 @@ function Tags() {
       sortKeywords = config.sortKeywords;
     }
 
+    tags.setFilterFromURL();
+    // tags wont have rendered yet so D3 can't select tag elements,
+    // to bypass this we trigger update(and indirectly tags.draw) twice
     tags.update();
+    tags.update();
+
+    window.addEventListener('hashchange', function() {
+      tags.setFilterFromURL();
+      
+      lock = true;
+      tags.update();
+      tags.highlightWords(filterWords);
+
+      setTimeout(function(){
+        canvas.project();
+      },300);
+      lock = false;
+      canvas.resetZoom();
+    });
+  }
+
+  tags.setFilterFromURL = function(){
+    var hash = window.location.hash;
+    if (hash && hash.startsWith("#tags=")) {
+      var words = hash.split("=")[1].split("|").map(w => decodeURI(w));
+      if (!words.length || words[0] != "") {
+        filterWords = words;
+      }
+    }
   }
 
   tags.resize = function(){
@@ -245,6 +273,7 @@ function Tags() {
     }
     // c(filterWords);
 
+    window.history.pushState({}, "", "#tags="+[...new Set(filterWords)].join("|"));
     tags.update();
     tags.highlightWords(filterWords);
 
