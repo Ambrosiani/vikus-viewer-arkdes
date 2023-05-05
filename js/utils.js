@@ -47,6 +47,10 @@ utils.initConfig = function(config){
 	document.documentElement.style.setProperty('--detail-background', config.style.detailBackground);
 	document.documentElement.style.setProperty('--detail-font-color', config.style.detailFontColor);
 	document.documentElement.style.setProperty('--searchbar-background', config.style.searchbarBackground);
+	document.documentElement.style.setProperty('--navigation-button-font-color', config.style.navigationButtonFontColor);
+	document.documentElement.style.setProperty('--navigation-button-background', config.style.navigationButtonBackground);
+	document.documentElement.style.setProperty('--navigation-button-active-font-color', config.style.navigationButtonActiveFontColor);
+	document.documentElement.style.setProperty('--navigation-button-active-background', config.style.navigationButtonActiveBackground);
 }
 
 // exhibition installations, will reinitialize the vis after x seconds
