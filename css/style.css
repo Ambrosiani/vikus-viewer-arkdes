@@ -531,7 +531,7 @@ svg {
     font-weight: 900;
     position: absolute;
     z-index: 50;
-    color: rgb(247, 239, 205);
+    color: var(--font-color);
     transform: translate(0px,-18px);
 }
 .tagcloud>div {
