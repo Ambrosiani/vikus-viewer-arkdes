@@ -37,7 +37,11 @@
     "detailFontColor": "#fff",
     "infoBackground": "#353535",
     "infoFontColor": "#fff",
-    "searchbarBackground": "#353535"
+    "searchbarBackground": "#353535",
+    "navigationButtonFontColor": "#000",
+    "navigationButtonBackground": "#ba9cc9",
+    "navigationButtonActiveFontColor": "#000",
+    "navigationButtonActiveBackground": "#ba9cc9"
   },
   "projection": {
     "columns": 10
