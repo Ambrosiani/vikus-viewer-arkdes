@@ -45,6 +45,7 @@ utils.initConfig = function(config){
 	document.documentElement.style.setProperty('--info-background', config.style.infoBackground);
 	document.documentElement.style.setProperty('--info-font-color', config.style.infoFontColor);
 	document.documentElement.style.setProperty('--detail-background', config.style.detailBackground);
+	document.documentElement.style.setProperty('--detail-font-color', config.style.detailFontColor);
 	document.documentElement.style.setProperty('--searchbar-background', config.style.searchbarBackground);
 }
 

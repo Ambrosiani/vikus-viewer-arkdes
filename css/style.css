@@ -704,7 +704,7 @@ svg {
     right: 0px;
     position: absolute;
     width: 520px;
-    color: #2D2D2D;
+    color: var(--detail-font-color, #2D2D2D);
     background: rgb(255, 254, 250);
     /* background: url("img/koenigspapier.png"); */
     /* font-size: 13px; */
