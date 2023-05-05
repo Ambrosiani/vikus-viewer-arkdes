@@ -42,48 +42,26 @@
     "columns": 10
   },
   "detail": {
-    "structure": [      
+    "structure": [     
       {
-        "name": "Description",
-        "source": "_description",
-        "display": "column",
-        "type": "text"
-      },
-      {
-        "name": "Heading",
         "source": "_heading",
-        "display": "column",
-        "type": "text"
+        "type": "html"
       },
       {
-        "name": "Year",
-        "source": "_year_start",
-        "display": "column",
-        "type": "text"
+        "source": "_display_id",
+        "type": "html"
       },
       {
-        "name": "Year done",
-        "source": "_year_done",
-        "display": "column",
-        "type": "text"
+        "source": "_description",
+        "type": "html"
       },
       {
-        "name": "Keywords",
-        "source": "_keywords",
-        "display": "column",
-        "type": "array"
+        "source": "_display_years",
+        "type": "html"
       },
       {
-        "name": "Id",
-        "source": "_id",
-        "display": "column",
-        "type": "text"
-      },
-      {
-        "name": "More info",
-        "source": "_url",
-        "display": "column",
-        "type": "link"
+        "source": "_display_keywords",
+        "type": "html"
       }
     ]
   },
