@@ -32,6 +32,10 @@ utils.initConfig = function(config){
 	// set window title
 	document.title = config.project.name
 
+	if (config.searchEnabled !== undefined){
+		!config.searchEnabled ? document.querySelector('.searchbar').style.display = 'none' : null;
+	}
+
 	document.documentElement.style.setProperty('--font-color-active', config.style.fontColorActive);
 	document.documentElement.style.setProperty('--font-background', config.style.fontBackground);
 	document.documentElement.style.setProperty('--timeline-background', config.style.timelineBackground);
