@@ -126,6 +126,10 @@ function init() {
 			canvas.setMode(mode);
 			timeline.setDisabled(mode != "time");
 
+			if (d3.select(this).classed("active")) {
+				document.location = "#tags=";
+			}
+
 			d3.selectAll(".navi .button").classed("active", function () {
 				return that === this
 			});

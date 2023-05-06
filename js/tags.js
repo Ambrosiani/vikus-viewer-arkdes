@@ -55,7 +55,7 @@ function Tags() {
 
     window.addEventListener('hashchange', function() {
       tags.setFilterFromURL();
-      
+
       lock = true;
       tags.update();
       tags.highlightWords(filterWords);
@@ -69,11 +69,13 @@ function Tags() {
   }
 
   tags.setFilterFromURL = function(){
-    var hash = window.location.hash;
+    var hash = document.location.hash;
     if (hash && hash.startsWith("#tags=")) {
       var words = hash.split("=")[1].split("|").map(w => decodeURI(w));
       if (!words.length || words[0] != "") {
         filterWords = words;
+      } else {
+        filterWords = [];
       }
     }
   }
