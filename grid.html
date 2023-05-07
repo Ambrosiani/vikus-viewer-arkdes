@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lewerentz digitala samling</title>
+    <style>
+      /* Define a 3x3 grid with equal column and row sizes */
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px; /* Optional gap between grid items */
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+      
+      /* Style the grid items */
+      .grid-item {
+        background-color: #ccc;
+        padding: 10px;
+        font-size: 3em;
+        background-size: cover;
+        background-position: center;
+      }
+
+      a {
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      span {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        padding: 0.1em;
+      }
+
+      .stockholm {
+        background-image: url('data/1024/ARKM.1973-05-03090.jpg');
+      }
+      .malmo {
+        background-image: url('data/1024/EX.07-13.jpg');
+      }
+      .uppsala {
+        background-image: url('data/1024/EX.04-02.jpg');
+      }
+      .travelphotographs {
+        background-image: url('data/1024/ARKM.1973-103-150-057.jpg');
+      }
+      .sketches {
+        background-image: url('data/1024/ARKM.1973-05-12340-001.jpg');
+      }
+      .perspectives {
+        background-image: url('data/1024/ARKM.1973-05-02525.jpg');
+      }
+      .cemeteries {
+        background-image: url('data/1024/ARKM.1973-05-08356.jpg');
+      }
+      .industrialdesign {
+        background-image: url('data/1024/ARKM.1985-104-51.jpg');
+      }
+      .competitionentries {
+        background-image: url('data/1024/ARKM.1985-215-01.jpg');
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item stockholm"><a href="/#tags=Stockholm"><span>Stockholm</span></a></div>
+      <div class="grid-item malmo"><a href="/#tags=Malmö"><span>Malmö</span></a></div>
+      <div class="grid-item uppsala"><a href="/#tags=Uppsala"><span>Uppsala</span></a></div>
+      <div class="grid-item travelphotographs"><a href="/#tags=Photography|Travel"><span>Travel Photographs</span></a></div>
+      <div class="grid-item sketches"><a href="/#tags=Sketches"><span>Sketches</span></a></div>
+      <div class="grid-item perspectives"><a href="/#tags=Perspective"><span>Perspectives</span></a></div>
+      <div class="grid-item cemeteries"><a href="/#tags=Cemeteries"><span>Cemeteries</span></a></div>
+      <div class="grid-item industrialdesign"><a href="/#tags=Industrial%20Design"><span>Industrial Design</span></a></div>
+      <div class="grid-item competitionentries"><a href="/#tags=Competitions"><span>Competition Entries</span></a></div>
+    </div>
+  </body>
+</html>
