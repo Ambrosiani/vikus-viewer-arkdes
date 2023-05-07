@@ -41,7 +41,10 @@
     "navigationButtonFontColor": "#000",
     "navigationButtonBackground": "#ba9cc9",
     "navigationButtonActiveFontColor": "#000",
-    "navigationButtonActiveBackground": "#ba9cc9"
+    "navigationButtonActiveBackground": "#ba9cc9",
+    "detailCloseButtonColor": "#fff",
+    "detailCloseButtonOpacity": 0.5,
+    "detailCloseButtonActiveOpacity": 0.6
   },
   "projection": {
     "columns": 10
