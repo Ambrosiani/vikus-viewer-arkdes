@@ -513,7 +513,7 @@ svg {
 }
 
 .tagcloud.hide {
-  transform: translate(0px,-370px);
+  transform: translate(0px,-370px); /* remove/comment out to make keywords sticky */
   /* opacity: 0; */
   /* visibility: hidden; */
 }
