@@ -668,15 +668,18 @@ svg {
     width: 20px;
     height: 30px;
     position: absolute;
-    background-image: url("../img/sideclose.svg");
     top: 50%;
-    opacity: 0.2;
+    opacity: var(--detail-close-button-opacity, 0.2);
     cursor: pointer;
     transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     /* transform: rotate(180deg); */
 }
 .detail .slidebutton:hover {
-    opacity: 0.3;
+  opacity: var(--detail-close-button-active-opacity, 0.3);
+}
+
+.detail .slidebutton svg path {
+  stroke: var(--detail-close-button-color, #fff);
 }
 
 

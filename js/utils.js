@@ -51,6 +51,9 @@ utils.initConfig = function(config){
 	document.documentElement.style.setProperty('--navigation-button-background', config.style.navigationButtonBackground);
 	document.documentElement.style.setProperty('--navigation-button-active-font-color', config.style.navigationButtonActiveFontColor);
 	document.documentElement.style.setProperty('--navigation-button-active-background', config.style.navigationButtonActiveBackground);
+	document.documentElement.style.setProperty('--detail-close-button-color', config.style.detailCloseButtonColor);
+	document.documentElement.style.setProperty('--detail-close-button-opacity', config.style.detailCloseButtonOpacity);
+	document.documentElement.style.setProperty('--detail-close-button-active-opacity', config.style.detailCloseButtonActiveOpacity);
 }
 
 // exhibition installations, will reinitialize the vis after x seconds
