@@ -175,7 +175,7 @@ function Tags() {
 
     keywordsScale
       .domain(keywordsExtent)
-      .range([10,20]); // keyword scale/size range
+      .range([15,25]); // keyword scale/size range
 
     if(keywordsExtent[0]==keywordsExtent[1]) keywordsScale.range([15,15])
 
@@ -190,7 +190,7 @@ function Tags() {
   }
 
   function layout(data){
-    var p = 1.8; // keyword padding
+    var p = 2; // keyword padding
     var p2 = 1;
     var x0 = 0;
 
