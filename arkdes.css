@@ -1,0 +1,29 @@
+.navi .button {
+    font-size: 15px;
+    width: 90px;
+    height: 22px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* CONTENT STYLES */
+.data-button {
+    text-decoration: none;
+    color: #000 !important;
+    background: #ba9cc9;
+    padding: .5em;
+    margin-right: .3em;
+    display: inline-block;
+    margin-top: .3em;
+}
+
+.data-years {
+    text-align: center;
+    font-size: 130%;
+}
+
+.data-identifier {
+    font-family: monospace;
+}
