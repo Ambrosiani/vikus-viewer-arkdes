@@ -505,10 +505,9 @@ function Canvas() {
     loadMiddleImage(d);
     d3.select(".tagcloud").classed("hide", true);
     var padding = x.rangeBand() / columns / 2;
-    var sidbar = width / 8;
     var scale = 0.6 / (x.rangeBand() / columns / width);
     var translateNow = [
-      -scale * (d.x - padding / 2) - sidbar,
+      -scale * (d.x - padding / 2) + width * 0.1,
       -scale * (height + d.y),
     ];
 
