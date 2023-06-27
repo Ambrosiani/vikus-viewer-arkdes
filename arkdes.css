@@ -8,7 +8,12 @@
     display: none;
 }
 
+.infobar {
+    display: none;
+}
+
 /* CONTENT STYLES */
+
 .data-button {
     text-decoration: none;
     color: #000 !important;
