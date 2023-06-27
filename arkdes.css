@@ -61,7 +61,7 @@
 }
 
 .detail.hide {
-    right: unset;
+    right: unset !important;
     bottom: -600px;
 }
 
