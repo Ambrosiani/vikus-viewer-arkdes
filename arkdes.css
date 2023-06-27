@@ -27,6 +27,43 @@
     padding-right: 1em;
 }
 
+.detail {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: unset;
+    bottom: 2em;
+    background: transparent;
+}
+
+.detail.hide {
+    right: unset;
+    bottom: -600px;
+}
+
+.detail .outer {
+    border-radius: 2em;
+}
+
+.detail .inner {
+    padding: 2em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.detail .slidebutton {
+    display: none;
+}
+
+.entry:last-of-type {
+    margin-bottom: 0;
+}
+
+.entry h2 {
+    margin: 0;
+}
+
 /* CONTENT STYLES */
 
 .data-button {
