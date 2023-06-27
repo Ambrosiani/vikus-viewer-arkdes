@@ -12,6 +12,21 @@
     display: none;
 }
 
+.navi {
+    left: .5em;
+}
+
+.navi .button {
+    margin-bottom: .5em;
+    border-radius: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.navi .button.active {
+    padding-right: 1em;
+}
+
 /* CONTENT STYLES */
 
 .data-button {
