@@ -12,6 +12,10 @@
     display: none;
 }
 
+.navi * {
+    transition: all;
+}
+
 .navi {
     left: .5em;
 }
@@ -20,12 +24,31 @@
     margin-bottom: .5em;
     border-radius: 1em;
     padding-left: .5em;
-    padding-right: .5em;
+    padding-right: .5em !important;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .navi .button.active {
-    padding-right: 1em;
+    width: 90%;
 }
+
+.navi .button.active:hover img {
+    transform: rotate(95deg);
+    transition: transform .5s;
+}
+
+.navi .button img {
+    display: none;
+    height: 20px;
+    transform: rotate(57deg);
+    transition: transform .5s;
+}
+
+.navi .button.active img {
+    display: inline-block;
+}
+    
 
 .detail {
     left: 0;
