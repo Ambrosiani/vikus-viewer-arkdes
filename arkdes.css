@@ -87,6 +87,10 @@
     margin: 0;
 }
 
+.timeline .container .entries {
+    display: none;
+}
+
 /* CONTENT STYLES */
 
 .data-button {
