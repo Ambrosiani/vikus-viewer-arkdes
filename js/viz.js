@@ -113,6 +113,12 @@ function init() {
 			d3.select(".sidebar").classed("sneak", s);
 		})
 
+	d3.select(".detail .icon")
+		.on("click", function () {
+			var s = !d3.select(".detail").classed("hide");
+			d3.select(".detail").classed("hide", s);
+		})
+
 	d3.select(".infobutton")
 		.on("click", function () {
 			var s = !d3.select(".infobar").classed("sneak");
