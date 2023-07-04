@@ -103,6 +103,22 @@
     display: none;
 }
 
+.logo {
+    position: absolute;
+    z-index: 100;
+    padding: 1em;
+}
+
+.logo img {
+    width: 10em;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        display: none;
+    }
+}
+
 /* CONTENT STYLES */
 
 .data-button {

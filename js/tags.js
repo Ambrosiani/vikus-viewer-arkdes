@@ -175,7 +175,7 @@ function Tags() {
 
     keywordsScale
       .domain(keywordsExtent)
-      .range([15,25]); // keyword scale/size range
+      .range([12,22]); // keyword scale/size range
 
     if(keywordsExtent[0]==keywordsExtent[1]) keywordsScale.range([15,15])
 
